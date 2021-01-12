@@ -4,6 +4,9 @@ class Tree {
     this.children = [];
   }
   insertChild(value) {
+    let newTree = new Tree(value)
+    this.children.push(newTree)
+    return newTree
   }
 
   // Uses a Depth-First Traversal
@@ -23,6 +26,7 @@ class Tree {
   }
 
   remove(value) {
+    
   }
 
   reorder(node1, node2) {
